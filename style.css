@@ -1,0 +1,361 @@
+body{margin: 0;
+background-color: rgb(240, 233, 233);
+overflow-x: hidden;
+}
+
+a {text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    background-color: rgb(32, 31, 31);
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    margin-bottom: 0;
+}
+
+li{
+    width: 30vw;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+li:hover{
+    color: green;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 120vh;     
+}
+
+#info-nav_a{
+    position: fixed;
+    top: 0;
+    background-color: orange;
+    width: 100vw;
+    height: 10vh;
+    padding-top: 20px;
+    z-index: 999;
+}
+ 
+h1{font-size: 30px;
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+    height: 10vh;
+    color: grey ;
+}
+
+#THS-logo-a{margin: 75px 0 0 0; 
+    width: 100vw;
+    height: 89vh;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin: auto;
+}  
+
+input[type=text]{background-image: url(/proj\ pics/search-icon.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border-color: grey;
+    padding: 12px 20px 12px 30px ;
+    font-size: 12px;
+    width: 50vw;
+    height: 4.9vh;
+    background-size: 20px;
+    background-position: 5px 15px;  
+    border-width: 0;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 900;
+}
+
+input:focus{
+    outline: 0;
+}
+
+#search{font-size: 12px; 
+    color: white;
+    background-color: orange;
+    border-width: 0;
+    border-radius: 5px;
+    width: 20vw;
+    height: 10vh;
+    margin-left: 20px;
+    cursor: pointer; 
+    font-family: 'Smooch Sans', sans-serif;  
+    font-weight: 900;
+    font-size: 16px;
+}
+
+/*section*/
+#first-aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+#the-promise{
+    width: 90vw;
+    height: 60vh;
+    border: 0;
+    background-color: white;
+    margin-right: 0px;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#the-promise h1{
+    font-size: 27px;
+    text-align: center;
+    width: 100vw;
+    margin: auto;
+    
+    padding-top: 0px;
+    height: 10vh;
+    position: sticky;
+    top: -20px;
+    background-color: white;   
+}
+
+#the-promise p{
+    font-size: 20px;
+    line-height: 2rem;
+    margin: 20px;
+    margin-top: 0;
+    padding: 10px;
+    border: 3px whitesmoke solid;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 900;
+}
+
+#sub-cat{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 60vh;
+}
+
+.face-of-hairricane{
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#cart-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50vw;
+    height: 80vh;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    overflow-y: auto;    
+}
+
+.cart-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-img{
+    border-radius: 1000px;
+    height: 15vh;
+    width: 30vw;
+    margin: auto;
+}
+
+.cart-sub-div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-name, .item-price{
+    margin: 0;
+    font-size: 15px;
+}
+
+.add-to-cart-btn{
+    background-color: orange;
+    border-width: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#cart-table{
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.deets, .price-item{
+    font-size: 10px;
+    width: 100vw;
+}
+
+.sub-total{
+   padding-right: 0;
+    font-size: 10px;
+}
+
+.remove-item {
+    font-size: 10px;
+    background-color: rgb(209, 78, 78);
+    border-radius: 10px;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.img-in-cart{
+    height: 40px;
+    width: 50px;
+    border-radius: 1000px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 600px){
+    .cart-img{
+        border-radius: 1000px;
+        height: 30vh;
+        width: 30vw;
+        margin: auto;
+    } 
+}
+
+
+@media only screen and (min-width: 760px){
+    #first-aside{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    #the-promise{
+        width: 45vw;
+        height: 60vh;
+        border: 0;
+        background-color: white;
+        margin-right: 5px;
+        padding-top: 20px;
+        overflow-y: scroll;
+    }
+
+    #sub-cat{
+        width: 45vw;
+        height: 60vh;
+    }
+
+    .face-of-hairricane{
+        width: 100vw;
+        height: 65vh;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #the-promise h1{
+        font-size: 30px;
+        text-align: center;
+        width: 40vw;
+        margin: auto;
+        margin-bottom: 20px;
+        height: 10vh;
+        position: sticky;
+        top: -20px;
+        background-color: white   
+    }
+
+    input[type=text]{background-image: url(/proj\ pics/search-icon.png);
+        font-size: 22px;
+    }
+
+    #cart-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+        width: 80vw;
+        height: 100vh;
+        overflow: hidden;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-radius: 10px;   
+    }
+
+    .cart-div{
+        width: 10vw;
+        margin-left: 20px;
+    }
+    
+    .cart-img{
+        border-radius: 1000px;
+        height: 20vh;
+        width: 10vw;
+        margin: 0;
+    }
+
+    .deets{
+        margin-top: 150000px;
+    }
+
+    .deets, .price-item{
+        font-size: 15px;
+        width: 100vw;
+    }
+
+    .remove-item {
+        font-size: 15px;
+        background-color: rgb(209, 78, 78);
+        border-radius: 10px;
+        border-width: 0;
+        cursor: pointer;
+    }
+
+    .sub-total{
+        padding-right: 0;
+         font-size: 15px;
+     }
+
+     .img-in-cart{
+         height: 80px;
+         width: 100px;
+         border-radius: 1000px;
+         margin-left: 20px;
+         margin-top: 20px;
+     }
+}
